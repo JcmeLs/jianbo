@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="color_tab_1">#455C65</color>
+    <color name="color_tab_2">#00886A</color>
+    <color name="color_tab_3">#8B6B62</color>
+    <color name="color_tab_4">#6C4A42</color>
+    <color name="color_tab_5">#F63D2B</color>
+    <color name="pldroid_streaming_white">#fff</color>
+    <color name="pldroid_streaming_red">#f00</color>
+    <color name="pldroid_streaming_yellow">#FFFF00</color>
+    <color name="srl_color1">@android:color/holo_blue_light</color>
+    <color name="srl_color2">@android:color/holo_red_light</color>
+    <color name="srl_color3">@android:color/holo_orange_light</color>
+    <color name="srl_color4">@android:color/holo_green_light</color>
+
+
+    <color name="common_bottom_bar_normal_bg">#323232</color>
+    <color name="common_bottom_bar_selected_bg">#fff</color>
+    <color name="common_botton_bar_text_noral">#5E5E5E</color>
+    <color name="common_white">#fff</color>
+    <color name="common_black">#3B3B3B</color>
+    <color name="common_btn_white_normal">@color/common_white</color>
+    <color name="common_btn_white_pressed">#ccc</color>
+
+    <color name="common_btn_black_normal">#1A1A1A</color>
+    <color name="black_323232">#323232</color>
+    <color name="common_btn_black_pressed">#111010</color>
+    <color name="common_btn_blue_normal">#24AAFF</color>
+    <color name="common_btn_blue_pressed">#1887cd</color>
+</resources>

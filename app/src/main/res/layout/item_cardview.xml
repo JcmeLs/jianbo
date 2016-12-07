@@ -1,0 +1,75 @@
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+android:layout_margin="4dp"
+    android:clickable="true"
+    android:foreground="?android:attr/selectableItemBackground">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="1dp"
+        android:background="#ffffff"
+
+        >
+
+        <android.support.design.widget.CoordinatorLayout
+            android:id="@+id/cv_coordinator"
+            android:layout_width="wrap_content"
+            android:layout_height="134dp">
+            <com.facebook.drawee.view.SimpleDraweeView
+                android:id="@+id/cv_img"
+                android:layout_width="wrap_content"
+                android:layout_height="110dp"
+                android:gravity="center"
+                fresco:actualImageScaleType="focusCrop"
+                fresco:viewAspectRatio="1.78"
+                fresco:placeholderImageScaleType="centerInside"
+                fresco:placeholderImage="@drawable/placeholder" />
+            <com.facebook.drawee.view.SimpleDraweeView
+                android:id="@+id/cv_headimg"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+
+                android:layout_below="@id/cv_img"
+                app:layout_anchor="@id/cv_img"
+                app:layout_anchorGravity="bottom|left|start"
+                fresco:actualImageScaleType="center"
+                fresco:placeholderImage="@drawable/testheaderimg"
+                android:layout_marginBottom="-24dp"
+                android:layout_marginLeft="8dp"
+                fresco:roundAsCircle="true" />
+            <TextView
+                android:id="@+id/cv_username"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_anchor="@id/cv_img"
+                app:layout_anchorGravity="bottom|left|start"
+                android:paddingTop="24dp"
+                android:layout_marginBottom="-36dp"
+                android:layout_marginLeft="60dp"
+                android:text="Jcme"
+                />
+
+
+
+
+        </android.support.design.widget.CoordinatorLayout>
+
+    <TextView
+        android:id="@+id/cv_nameTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/cv_coordinator"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="16dp"
+        android:ellipsize="end"
+        android:maxEms="8"
+        android:paddingBottom="4dp"
+        android:singleLine="true"
+        android:text="Jcmels-Android Coding"
+        android:textSize="18sp" />
+    </RelativeLayout>
+</android.support.v7.widget.CardView>

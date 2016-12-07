@@ -1,0 +1,205 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginBottom="48dp"
+    tools:context="com.jcmels.liba.piliplaydemo.fragment.MyFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/fab_startpili"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_margin="16dp"
+            android:src="@drawable/ic_pili" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/myf_login1"
+                android:layout_width="match_parent"
+                android:layout_height="64dp"
+                android:layout_marginTop="16dp"
+                android:background="#ffffff"
+                android:clickable="true">
+
+                <com.facebook.drawee.view.SimpleDraweeView
+                    android:id="@+id/myf_headimg"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="16dp"
+
+                    fresco:actualImageScaleType="center"
+                    fresco:placeholderImage="@drawable/testheaderimg"
+                    fresco:placeholderImageScaleType="fitCenter"
+                    fresco:roundAsCircle="true" />
+
+                <TextView
+                    android:id="@+id/myf_username"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="16dp"
+                    android:text="点击登录 >" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginTop="8dp"
+                android:background="#ffffff">
+
+                <com.facebook.drawee.view.SimpleDraweeView
+                    android:id="@+id/myf_subscribe"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="16dp"
+
+                    fresco:actualImageScaleType="center"
+                    fresco:placeholderImage="@drawable/ic_subscribe"
+                    fresco:placeholderImageScaleType="fitXY" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="24dp"
+                    android:layout_marginRight="16dp"
+                    android:layout_toRightOf="@id/myf_subscribe"
+                    android:text="我的订阅" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="16dp"
+                    android:text=">" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginTop="1dp"
+                android:background="#ffffff">
+
+                <com.facebook.drawee.view.SimpleDraweeView
+                    android:id="@+id/myf_history"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="16dp"
+
+                    fresco:actualImageScaleType="center"
+                    fresco:placeholderImage="@drawable/ic_history"
+                    fresco:placeholderImageScaleType="fitXY" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="24dp"
+                    android:layout_marginRight="16dp"
+                    android:layout_toRightOf="@id/myf_history"
+                    android:text="观看历史" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="16dp"
+                    android:text=">" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginTop="8dp"
+                android:background="#ffffff">
+
+                <com.facebook.drawee.view.SimpleDraweeView
+                    android:id="@+id/myf_msg"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="16dp"
+
+                    fresco:actualImageScaleType="center"
+                    fresco:placeholderImage="@drawable/ic_msg"
+                    fresco:placeholderImageScaleType="fitXY" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="24dp"
+                    android:layout_marginRight="16dp"
+                    android:layout_toRightOf="@id/myf_msg"
+                    android:text="私信" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="16dp"
+                    android:text=">" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginTop="1dp"
+                android:background="#ffffff">
+
+                <com.facebook.drawee.view.SimpleDraweeView
+                    android:id="@+id/myf_notice"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="16dp"
+
+                    fresco:actualImageScaleType="center"
+                    fresco:placeholderImage="@drawable/ic_notice"
+                    fresco:placeholderImageScaleType="fitXY" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="24dp"
+                    android:layout_marginRight="16dp"
+                    android:layout_toRightOf="@id/myf_notice"
+                    android:text="官方公告" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="16dp"
+                    android:text=">" />
+            </RelativeLayout>
+        </LinearLayout>
+    </RelativeLayout>
+</FrameLayout>

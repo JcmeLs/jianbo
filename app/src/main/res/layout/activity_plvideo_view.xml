@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_plvideo_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    tools:context=".activity.play.PLVideoViewActivity">
+
+    <com.pili.pldroid.player.widget.PLVideoView
+        android:id="@+id/PLVideoView"
+        android:layout_width="match_parent"
+
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+
+            <RelativeLayout
+                android:id="@+id/apv_toolbar"
+                android:background="#20000000"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                >
+
+                <Button
+                    android:id="@+id/btn_back"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="16dp"
+                    android:background="@drawable/ic_back"
+
+                    android:drawableTint="#ffffff" />
+
+                <TextView
+                    android:id="@+id/tiptext"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="16dp"
+                    android:layout_toRightOf="@id/btn_back"
+                    android:text="直播间："
+                    android:textColor="#ffffff"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/tv_roomname"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@id/tiptext"
+                    android:text="jcmels"
+                    android:textColor="#ffffff"
+                    android:textSize="20sp" />
+            </RelativeLayout>
+
+            <include
+                layout="@layout/room_user_list_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/apv_toolbar" />
+
+            <com.jcmels.liba.piliplaydemo.ui.widget.RoomMessagesView
+                android:id="@+id/message_view"
+                android:layout_width="match_parent"
+                android:layout_height="170dp"
+                android:layout_alignParentBottom="true"
+                android:clickable="true"
+                />
+
+            <com.jcmels.liba.piliplaydemo.ui.widget.BarrageLayout
+                android:id="@+id/barrage_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_above="@id/message_view"
+                android:layout_marginBottom="10dp" />
+            <com.jcmels.liba.piliplaydemo.ui.widget.PeriscopeLayout
+                android:id="@+id/periscope_layout"
+                android:layout_width="150dp"
+                android:layout_height="190dp"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginBottom="42dp">
+
+            </com.jcmels.liba.piliplaydemo.ui.widget.PeriscopeLayout>
+
+
+        <com.jcmels.liba.piliplaydemo.ui.widget.LiveLeftGiftView
+            android:id="@+id/left_gift_view1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/left_gift_view2"
+            android:visibility="invisible"
+            android:layout_marginBottom="4dp"
+            />
+        <com.jcmels.liba.piliplaydemo.ui.widget.LiveLeftGiftView
+            android:id="@+id/left_gift_view2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginBottom="5dp"
+            android:visibility="invisible"
+            />
+        <include
+            android:id="@+id/bottom_bar"
+            layout="@layout/layout_live_bottom_bar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            />
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:id="@+id/message_container"
+            android:layout_alignParentBottom="true"
+            >
+
+        </RelativeLayout>
+        </RelativeLayout>
+    </com.pili.pldroid.player.widget.PLVideoView>
+
+
+    <com.facebook.drawee.view.SimpleDraweeView
+        android:id="@+id/apv_simpleDraweeView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        fresco:placeholderImage="@drawable/placeholder"
+        fresco:placeholderImageScaleType="fitCenter" />
+
+</RelativeLayout>

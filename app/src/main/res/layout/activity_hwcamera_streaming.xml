@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/content"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_floating_material_dark"
+    tools:context=".activity.pili.HWCameraStreamingActivity">
+
+    <com.qiniu.pili.droid.streaming.widget.AspectFrameLayout
+        android:id="@+id/cameraPreview_afl"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true">
+
+        <com.jcmels.liba.piliplaydemo.ui.CameraPreviewFrameView
+            android:id="@+id/cameraPreview_surfaceView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center" />
+
+        <include layout="@layout/focus_indicator" />
+
+
+    </com.qiniu.pili.droid.streaming.widget.AspectFrameLayout>
+    <Button
+        android:layout_width="28dp"
+        android:layout_height="28dp"
+        android:layout_marginLeft="16dp"
+        android:id="@+id/btn_flashes"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/ic_flashes"
+        />
+    <Button
+        android:id="@+id/btn_change"
+        android:layout_width="28dp"
+        android:layout_height="28dp"
+        android:layout_marginTop="16dp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/ic_switcher" />
+    <Button
+        android:layout_width="28dp"
+        android:layout_height="28dp"
+        android:layout_marginRight="16dp"
+        android:id="@+id/btn_mute"
+        android:layout_marginTop="16dp"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/ic_unmute"
+        />
+
+    <TextView
+        android:id="@+id/tv_status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="40dp"
+        android:layout_marginLeft="16dp"
+        android:textSize="20sp"
+        android:textColor="#e6e6e6"
+        android:text="准备中..."/>
+    <Button
+        android:id="@+id/btn_startstream"
+        android:layout_marginBottom="16dp"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:scaleType="center"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/shutter_button"/>
+    <Button
+        android:layout_width="28dp"
+        android:layout_height="28dp"
+        android:layout_marginRight="16dp"
+        android:id="@+id/btn_Screenshooter"
+        android:layout_marginBottom="36dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/ic_screenshooter"
+        />
+    <Button
+        android:layout_width="28dp"
+        android:layout_height="28dp"
+        android:layout_marginRight="90dp"
+        android:id="@+id/btn_beauty"
+        android:layout_marginBottom="36dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/ic_beauty"
+        />
+</RelativeLayout>
